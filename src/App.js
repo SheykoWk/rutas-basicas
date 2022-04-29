@@ -5,7 +5,8 @@ import About from './pages/About'
 import Login from './pages/Login'
 import Menu from './components/Menu';
 import Redirect from './pages/Redirect';
-import Pokemons from './pages/Pokemons';
+import Pokemon from './pages/Pokemon';
+import PokemonList from './pages/PokemonList';
 
 function App() {
 
@@ -18,7 +19,8 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/login' element={<Login />} />
           <Route path='/redirect' element={<Redirect />} />
-          <Route path='/pokemons/:id' element={<Pokemons />} />
+          <Route path='/pokemons' element={<PokemonList />} />
+          <Route path='/pokemons/:id' element={<Pokemon />} />
         </Routes>
       </header>
     </div>
