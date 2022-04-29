@@ -1,6 +1,9 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 const Menu = () => {
+
+    const navigate = useNavigate()
+
     return(
         <div>
             <Link to='/'>Home</Link>
@@ -10,6 +13,9 @@ const Menu = () => {
             <Link to='/login' >Login</Link>
             <br/>
             <Link to='/redirect' >Redirect</Link>
+            <br/>
+            <button onClick={() => navigate(-2) } >Regresar</button>
+            <button onClick={() => navigate(+1) } >Avanzar</button>
         </div>
     )
 }

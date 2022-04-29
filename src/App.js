@@ -7,7 +7,7 @@ import Menu from './components/Menu';
 import Redirect from './pages/Redirect';
 
 function App() {
-
+  
   return (
     <div className="App">
       <header className="App-header">
