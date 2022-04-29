@@ -7,7 +7,6 @@ const PokemonList = () => {
 
     const [pokeArray, setPokeArray] = useState([])
 
-
     useEffect(() => {
         getAllPokemons()
             .then(res => {
@@ -17,7 +16,7 @@ const PokemonList = () => {
 
     return (
         <div>
-            {pokeArray.map((item) => <PokemonItem pokeObj={item} key={item.id} /> )}
+            {pokeArray.map((item) => <PokemonItem pokeObj={item} key={item.url} /> )}
         </div>
     )
 }

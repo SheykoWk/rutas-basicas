@@ -14,7 +14,7 @@ const Menu = () => {
             <br/>
             <Link to='/redirect' >Redirect</Link>
             <br/>
-            <button onClick={() => navigate(-2) } >Regresar</button>
+            <button onClick={() => navigate(-1) } >Regresar</button>
             <button onClick={() => navigate(+1) } >Avanzar</button>
         </div>
     )
